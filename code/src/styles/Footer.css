@@ -1,15 +1,12 @@
 .Footer{
-
-    background-color: rgb(42, 42, 42);
+    background-color: var(--background-light);
 }
 
 .footer-body{
-
     display: flex;
     justify-content: space-between;
     padding: 0 10vw;
     padding-top: 5vh;
-
 }
 
 .footer-body ul{
@@ -19,20 +16,19 @@
 
 .footer-body ul li{
     list-style: none;
-    color: rgb(220, 220, 220);
+    color: var(--text-light);
     cursor: pointer;
     font-size: 1.1rem;
     text-align: center;
 }
 
 .footer-body ul li:hover{
-    color: tomato;
-    
+    color: var(--primary-color);
 }
 
 .Footer hr{
-
     width: 95%;
+    border-color: var(--primary-color-dark);
 }
 
 .Footer p{
@@ -41,5 +37,5 @@
     padding-bottom: 3vh;
     padding-top: 2vh;
     font-size: 1.2rem;
-    color: rgb(182, 182, 182);
+    color: var(--primary-color);
 }

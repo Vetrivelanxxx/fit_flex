@@ -1,7 +1,8 @@
 .newsletter-container {
-  background-color: #f8f9fa;
+  background-color: var(--background-light);
   padding: 60px 20px;
   margin-top: 40px;
+  border-top: 1px solid var(--primary-color-dark);
 }
 
 .newsletter-content {
@@ -12,19 +13,19 @@
 
 .newsletter-icon {
   font-size: 40px;
-  color: #ff4757;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
 .newsletter-text h2 {
   font-size: 28px;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--text-light);
 }
 
 .newsletter-text p {
   font-size: 16px;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 25px;
 }
 
@@ -37,14 +38,16 @@
 .newsletter-form input {
   flex: 1;
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--primary-color-dark);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--text-light);
   border-radius: 4px 0 0 4px;
   font-size: 16px;
 }
 
 .newsletter-form button {
-  background-color: #ff4757;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--background-dark);
   border: none;
   padding: 12px 25px;
   border-radius: 0 4px 4px 0;
@@ -55,14 +58,14 @@
 }
 
 .newsletter-form button:hover {
-  background-color: #e03a48;
+  background-color: var(--primary-color-dark);
 }
 
 .subscription-message {
   margin-top: 20px;
   padding: 10px;
-  background-color: #4cd137;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--background-dark);
   border-radius: 4px;
   animation: fadeIn 0.5s;
 }

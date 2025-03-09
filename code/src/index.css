@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Teko:wght@400;600;700&family=Whisper&display=swap');
 
+:root {
+  --primary-color: #FFD700; /* Gold */
+  --primary-color-dark: #D4AF37; /* Darker gold for hover states */
+  --primary-color-light: rgba(255, 215, 0, 0.3); /* Light gold for backgrounds */
+  --background-dark: #000000; /* Black */
+  --background-light: #1A1A1A; /* Slightly lighter black */
+  --text-light: #FFFFFF; /* White text */
+  --text-gold: #FFD700; /* Gold text */
+}
+
 body {
   margin: 0;
   font-family: 'Teko', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-dark);
+  color: var(--text-light);
 }
 
 code {

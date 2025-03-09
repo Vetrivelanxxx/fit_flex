@@ -7,7 +7,7 @@
 .back-button {
   background-color: transparent;
   border: none;
-  color: #666;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   cursor: pointer;
   display: flex;
@@ -20,15 +20,15 @@
 }
 
 .back-button:hover {
-  color: #ff4757;
-  background-color: #f8f9fa;
+  color: var(--primary-color);
+  background-color: rgba(255, 215, 0, 0.1);
 }
 
 /* Loading and Error States */
 .loading-container, .error-container, .no-videos {
   text-align: center;
   padding: 60px 20px;
-  background-color: #f8f9fa;
+  background-color: var(--background-light);
   border-radius: 10px;
   margin: 40px 0;
 }
@@ -36,8 +36,8 @@
 .loading-spinner {
   width: 50px;
   height: 50px;
-  border: 5px solid rgba(255, 71, 87, 0.2);
-  border-top: 5px solid #ff4757;
+  border: 5px solid rgba(255, 215, 0, 0.2);
+  border-top: 5px solid var(--primary-color);
   border-radius: 50%;
   margin: 0 auto 20px;
   animation: spin 1s linear infinite;
@@ -97,23 +97,24 @@
 }
 
 .tag {
-  padding: 6px 15px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .tag.primary {
-  background-color: #ff4757;
-  color: white;
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
 }
 
 .tag.secondary {
-  background-color: #f8f9fa;
-  color: #666;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
 }
 
 .exercise-content {
@@ -153,9 +154,9 @@
 }
 
 .detail-section h3 {
-  font-size: 20px;
-  margin: 0 0 10px 0;
-  color: #333;
+  font-size: 22px;
+  margin: 0 0 15px 0;
+  color: var(--primary-color);
   position: relative;
   display: inline-block;
 }
@@ -164,9 +165,9 @@
   content: '';
   position: absolute;
   width: 100%;
-  height: 6px;
-  background-color: rgba(255, 71, 87, 0.2);
-  bottom: 2px;
+  height: 8px;
+  background-color: var(--primary-color-light);
+  bottom: 5px;
   left: 0;
   z-index: -1;
 }
@@ -184,11 +185,13 @@
 }
 
 .muscle-tag {
-  background-color: #f8f9fa;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #666;
+  background-color: rgba(255, 215, 0, 0.2);
+  color: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .instructions-list {
@@ -223,8 +226,8 @@
 
 .section-header h2 {
   font-size: 28px;
-  color: #333;
   margin: 0;
+  color: var(--primary-color);
 }
 
 .youtube-icon {
@@ -245,17 +248,17 @@
 }
 
 .video-card {
-  background-color: white;
-  border-radius: 10px;
+  background-color: var(--background-light);
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .video-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.2);
 }
 
 .video-thumbnail {
@@ -301,8 +304,8 @@
 
 .video-info h3 {
   font-size: 16px;
-  margin: 0 0 10px 0;
-  color: #333;
+  margin: 0 0 8px 0;
+  color: var(--text-light);
   line-height: 1.4;
 }
 
